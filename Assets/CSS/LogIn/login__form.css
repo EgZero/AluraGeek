@@ -1,0 +1,9 @@
+.login__form{
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2.5rem;
+    line-height: 1.5;
+}

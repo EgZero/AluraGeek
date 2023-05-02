@@ -1,0 +1,6 @@
+.contact__message{
+    outline: none;
+    border-radius: 3px;
+    border: 2px solid var(--negro);
+    resize: none;
+}

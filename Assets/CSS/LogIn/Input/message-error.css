@@ -1,0 +1,9 @@
+.message-error{
+    text-align: right;
+    margin-right: .5rem;
+    line-height: normal;
+    margin-bottom: .5rem;
+    font-family: var(--Raleway);
+    font-weight:500;
+    color: var(--rojo);
+}

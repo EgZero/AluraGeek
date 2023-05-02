@@ -1,0 +1,6 @@
+.products__category-tittle{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: var(--Montserrat);
+    color:var(--blanco);
+}

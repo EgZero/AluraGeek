@@ -1,0 +1,57 @@
+.banner{
+    order: 100;
+    position: relative;
+}
+
+.banner__background{
+    background-image: url(../../IMG/header/Banner.jpg);
+    background-size: cover;
+    filter: contrast(.5);
+    height: 35vh;
+    width: 100%;
+}
+
+.banner__content{
+    display: flex;
+    align-items: start;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: absolute;
+    bottom: 1px;
+}
+
+.banner__text{
+    line-height: 1.5;
+    border-radius: 2px;
+}
+
+.banner__promo{
+    font-family: var(--Montserrat);
+    color: var(--blanco);
+    padding: 0 6%;
+    background-color: var(--negro);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+
+
+.banner__description{
+    display: block;
+    width: 100%;
+    padding: 0  .2rem 0 6%;
+    font-family: var(--Raleway);
+    font-size: 1.1rem;
+    font-weight: 400;
+    color:var(--negro);
+    background-color: var(--blanco);
+}
+
+
+.banner__button { 
+    background:var(--dorado) ;
+    font-family: var(--Raleway);
+    margin: .7rem 6%;
+    font-weight: 500;
+    color: var(--negro);
+}

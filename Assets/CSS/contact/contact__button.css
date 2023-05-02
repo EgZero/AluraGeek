@@ -1,0 +1,8 @@
+.contact__button{
+    align-self: flex-start;
+    border: none;
+    color:var(--blanco);
+    font-weight: 500;
+    font-family: var(--Raleway);
+    font-variant: small-caps;
+}

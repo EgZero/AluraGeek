@@ -1,0 +1,7 @@
+.contact__label{
+    font-size: 1.1rem;
+    color: #a09f9f;
+    padding: .2rem;
+    border: 2px solid var(--negro);
+    border-radius: 3px;
+}

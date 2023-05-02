@@ -1,0 +1,12 @@
+.header{
+    padding-top: 1rem;
+    padding-bottom:1rem;
+    background-color: #252525;
+}
+
+.header__header{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1.5rem;
+    align-items: center;
+}

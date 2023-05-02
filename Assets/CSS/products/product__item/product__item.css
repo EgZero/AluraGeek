@@ -1,0 +1,13 @@
+
+.product__text{
+    line-height: 1.8;
+    font-family: var(--Raleway);
+    color: var(--blanco);
+}
+
+@media screen and (min-width: 0px){
+    .product__item:nth-child(5),
+    .product__item:nth-child(6){
+        display: none;
+    }
+}

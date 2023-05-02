@@ -1,0 +1,7 @@
+.similares__title{
+    font-family: var(--Montserrat);
+    color: var(--blanco);
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-bottom: .5rem;
+}

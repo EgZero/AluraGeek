@@ -1,0 +1,6 @@
+.login__title{
+    font-family:var(--Montserrat);
+    font-size: 1.1rem;
+    font-weight: bolder;
+    margin-bottom: .5rem;
+}

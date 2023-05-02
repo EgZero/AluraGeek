@@ -1,0 +1,24 @@
+:root{
+    --quicksand: "Quicksand", sans-serif;
+    --Montserrat: "Montserrat", sans-serif;
+    --OpenSans: "Open Sans", sans-serif;
+    --quicksand: "Quicksand", sans-serif;
+    --Raleway: "Raleway", sans-serif;
+    --dorado: #D2ac47;
+    --rojo: #c00000;
+    --blanco: #f5f5f5;
+    --gris: #252525;
+    --negro:#111;
+}
+
+.container{
+    padding: 0 6%;
+}
+
+.button{
+    padding: .6rem 1.2rem;
+    background-color:#252525;
+    border-radius: 2px;
+    border: none;
+    text-decoration: none;
+}

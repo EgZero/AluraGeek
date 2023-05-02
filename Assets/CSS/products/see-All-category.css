@@ -1,0 +1,18 @@
+.see-All-category{
+    margin: 1rem;
+    text-decoration: none;
+    color: var(--dorado);
+    font-size: 1.2rem;
+    font-family: var(--Raleway);
+    font-weight: 500;
+}
+
+.see-All-category::after{
+    content:"";
+    display: inline-block;
+    background-image: url(../../IMG/Products/Arrow.svg);
+    background-size: cover;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+}

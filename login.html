@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/reset.css">
+    <link rel="stylesheet" href="assets/CSS/general.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Quicksand:wght@300;400;700&family=Raleway:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- HEADER -->
+    <link rel="stylesheet" href="assets/CSS/header/header.css">
+    <link rel="stylesheet" href="assets/CSS/header/header__logo.css">
+    <link rel="stylesheet" href="assets/CSS/header/header__searchform.css">
+    <link rel="stylesheet" href="assets/CSS/header/header__searchbar.css">
+    <link rel="stylesheet" href="assets/CSS/header/header__search-button.css">
+    
+    <!-- LogIn -->
+    <link rel="stylesheet" href="Assets/CSS/LogIn/login__button.css">
+    <link rel="stylesheet" href="Assets/CSS/LogIn/login__form.css">
+    <link rel="stylesheet" href="Assets/CSS/LogIn/login__title.css">
+    <link rel="stylesheet" href="Assets/CSS/LogIn/Input/input__container.css">
+    <link rel="stylesheet" href="Assets/CSS/LogIn/Input/login__label.css">
+    <link rel="stylesheet" href="Assets/CSS/LogIn/Input/login__input.css">
+    <link rel="stylesheet" href="Assets/CSS/LogIn/Input/message-error.css">
+
+    <!-- CONTACT -->
+    <link rel="stylesheet" href="Assets/CSS/main.css">
+    <link rel="stylesheet" href="assets/CSS/contact/contact__section.css">
+    <link rel="stylesheet" href="assets/CSS/contact/about__list.css">
+    <link rel="stylesheet" href="assets/CSS/contact/about__link.css">
+    <link rel="stylesheet" href="assets/CSS/contact/contact__container.css">
+    <link rel="stylesheet" href="assets/CSS/contact/contact__title.css">
+    <link rel="stylesheet" href="assets/CSS/contact/contact__input.css">
+    <link rel="stylesheet" href="assets/CSS/contact/contact__label.css">
+    <link rel="stylesheet" href="assets/CSS/contact/contact__message.css">
+    <link rel="stylesheet" href="assets/CSS/contact/contact__button.css">
+
+    <!-- FOOTER -->
+    <link rel="stylesheet" href="assets/CSS/footer.css">
+    <link rel="stylesheet" href="assets/CSS/footer__logo.css">
+
+    <title>Login -- AluraGeek</title>
+</head>
+
+<body>
+    <header class="header container">
+        <div class="header__header">
+            <h1 class="header__logo logo"><a href="ProductoSeleccionado.html"><img src="" alt="Logo"></a></h1>
+            <form action="#" class="search__form">
+                <input type="search" placeholder="¿Qué deseas buscar?" name="search" id="" class="header__searchbar">
+                <button type="submit" class="header__search-button"><img src="Assets/IMG/header/search.svg"></button>
+                <a href="#" class="header__search-button--mobile"><img src="Assets/IMG/header/search.svg"></a>
+            </form>
+        </div>
+    </header>
+
+    <main class="main container">
+        <form class="login__form">
+            <h3 class="login__title">Iniciar Sesion</h3>
+            <div class="input__container">
+                <label for="email" class="login__label">Correo Electronico
+                    <input class="login__input" type="email" name="email" id="email" data-login="email" required>
+                </label>
+                <p class="message-error">Este campo no es valido</p>
+            </div>
+            <div class="input__container">
+                <label for="password" class="login__label">Contraseña
+                    <input class="login__input" type="password" name="email" id="" data-login="password" required>
+                </label>
+                <p class="message-error">Este campo no es valido</p>
+            </div>
+            <button class="login__button button" type="submit">Entrar</button>
+        </form>
+        <section class="contact__section">
+            <ul class="about__list">
+                <li class="about__link">Quienes somos</li>
+                <li class="about__link">Política de privacidad</li>
+                <li class="about__link">Programa de fifelidad</li>
+                <li class="about__link">Nuestras Tiendas</li>
+                <li class="about__link">Quiero ser franquiciado</li>
+                <li class="about__link">Anuncie Aquí</li>
+            </ul>
+            <form class="contact__form">
+                <fieldset class="contact__container">
+                    <legend class="contact__title">Habla con Nosotros</legend>
+                    <label for="nombre" class="contact__label">Nombre <input type="text" name="nombre" id="nombre"
+                            class="contact__input"></label>
+                    <textarea name="message" id="contact__message" cols="30" rows="10"
+                        class="contact__message"></textarea>
+                    <button type="submit" class="contact__button button">Enviar Mensaje</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer class="footer container">
+        <a href="" class="footer__logo logo"><img src="" alt=""></a>
+        <p class="footer__autor">Desarrollado por Angel Orellana</p>
+        <span class="footer__age">&copy; 2023</span>
+    </footer>
+</body>
+
+</html>

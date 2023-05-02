@@ -1,0 +1,9 @@
+
+.product__text{
+    line-height: 1.8;
+    font-family: var(--Raleway);
+    color: var(--blanco);
+}
+.product__item{
+    margin-top: .5rem;
+}

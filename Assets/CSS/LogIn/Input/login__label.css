@@ -1,0 +1,8 @@
+.login__label{
+    display: flex;
+    flex-direction: column;
+    color: #a09f9f;
+    border: 2px solid var(--gris);
+    border-radius: 3px;
+    padding: .3rem;
+}

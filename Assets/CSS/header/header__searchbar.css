@@ -1,0 +1,25 @@
+.header__searchbar{
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0 3px;
+    color: #f5f5f5;
+}
+
+@media screen and (min-width: 0px) {
+    .header__searchbar{
+        background: url(../../IMG/header/search.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .header__searchbar::placeholder{
+        visibility: hidden;
+    }
+    .header__searchbar:focus{
+        width: auto;
+        background-position: right;
+    }
+}
