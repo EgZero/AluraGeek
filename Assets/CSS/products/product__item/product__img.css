@@ -1,0 +1,7 @@
+.product__img{
+    display: flex;
+    align-items: center;
+}
+.product_img-img{
+    width: 150px;
+}

@@ -43,6 +43,12 @@
     <link rel="stylesheet" href="assets/CSS/contact/contact__label.css">
     <link rel="stylesheet" href="assets/CSS/contact/contact__message.css">
     <link rel="stylesheet" href="assets/CSS/contact/contact__button.css">
+    <link rel="stylesheet" href="assets/CSS/LogIn/Input/input__container.css">
+    <link rel="stylesheet" href="assets/CSS/LogIn/Input/login__input.css">
+    <link rel="stylesheet" href="assets/CSS/LogIn/Input/login__label.css">
+    <link rel="stylesheet" href="assets/CSS/LogIn/Input/message-error.css">
+    <link rel="stylesheet" type="text/css" href="assets/CSS/products/addProduct/addProduct-container.css">
+    
 
     <!-- FOOTER -->
     <link rel="stylesheet" href="assets/CSS/footer.css">
@@ -55,25 +61,18 @@
 <body>
     <header class="header container">
         <div class="header__header">
-            <h1 class="header__logo logo"><a href="#"><img src="" alt="Logo"></a></h1>
+            <h1 class="header__logo logo"><a href="index.html"><img src="" alt="Logo"></a></h1>
             <form action="#" class="search__form">
                 <input type="search" placeholder="¿Qué deseas buscar?" name="search" id="" class="header__searchbar">
                 <button type="submit" class="header__search-button"><img src="Assets/IMG/header/search.svg"></button>
-                <a href="#" class="header__search-button--mobile"><img src="Assets/IMG/header/search.svg"></a>
             </form>
-            <a href="#" class="login__button button">Ingresar</a>
         </div>
     </header>
     <main class="main continer">
         <section class="products__section continer">
             <h3 class="products__category-tittle">Nuestros Productos</h3>
+            <button class="addProduct__button button" data-add>Agregar Producto</button>
             <ul class="products__category-list">
-                <li class="product__item">
-                    <a href="#" class="product__img"><img src="Assets/IMG/header/unsplash_epRFE_hBNjo.png" alt="IMGXD"></a>
-                    <p class="product__tittle product__text">Producto XYZ</p>
-                    <p class="product__price product__text">$XXXXX</p>
-                    <a href="#" class="product__link product__text">Ver producto</a>
-                    <span class="span product__id"></span>
             </ul>
         </section>
         <section class="contact__section">
@@ -85,13 +84,15 @@
                 <li class="about__link">Quiero ser franquiciado</li>
                 <li class="about__link">Anuncie Aquí</li>
             </ul>
-            <form class="contact__form">
+            <form class="contact__form" data-form>
                 <fieldset class="contact__container">
                     <legend class="contact__title">Habla con Nosotros</legend>
-                    <label for="nombre" class="contact__label">Nombre <input type="text" name="nombre" id="nombre"
-                            class="contact__input"></label>
-                    <textarea name="message" id="contact__message" cols="30" rows="10"
-                        class="contact__message"></textarea>
+                    <div class="input__container">
+                        <label for="nombre" class="contact__label">Nombre
+                            <input type="text" name="nombre" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ]+" id="nombre" class="contact__input" required data-input>
+                        </label>
+                    </div>
+                    <textarea name="message" id="mensaje" cols="30" rows="10" class="contact__message" required data-input></textarea>
                     <button type="submit" class="contact__button button">Enviar Mensaje</button>
                 </fieldset>
             </form>
@@ -102,5 +103,6 @@
         <span class="footer__age">2023</span>
     </footer>
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="Assets/JS/client-controllers/allProducts.controller.js"></script>
 </html>

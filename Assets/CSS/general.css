@@ -1,5 +1,5 @@
-:root{
-    --quicksand: "Quicksand", sans-serif;
+:root {
+    --Quicksand: "Quicksand", sans-serif;
     --Montserrat: "Montserrat", sans-serif;
     --OpenSans: "Open Sans", sans-serif;
     --quicksand: "Quicksand", sans-serif;
@@ -8,17 +8,27 @@
     --rojo: #c00000;
     --blanco: #f5f5f5;
     --gris: #252525;
-    --negro:#111;
+    --negro: #111;
 }
 
-.container{
+.container {
     padding: 0 6%;
 }
 
-.button{
+.button {
     padding: .6rem 1.2rem;
-    background-color:#252525;
+    background-color: #252525;
     border-radius: 2px;
     border: none;
     text-decoration: none;
+}
+
+.addProduct__button {
+    border: 2px solid var(--blanco);
+    color: var(--blanco);
+    display: inline-block;
+    margin: .6rem 0;
+    font-size: 1.1rem;
+    font-family: var(--Montserrat);
+    font-weight: 500;
 }

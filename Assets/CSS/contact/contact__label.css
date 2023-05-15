@@ -1,7 +1,10 @@
 .contact__label{
     font-size: 1.1rem;
+    font-family: var(--Raleway);
     color: #a09f9f;
     padding: .2rem;
     border: 2px solid var(--negro);
     border-radius: 3px;
+    display: inline-block;
+    width: -webkit-fill-available;
 }

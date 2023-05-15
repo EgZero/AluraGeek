@@ -69,66 +69,9 @@
         </div>
     </header>
     <main class="main container">
-        <section class="muestra-productos">
-            <div class="resenia">
-                <img class="resenia__img" src="Assets/IMG/header/ImagenSVG.svg" alt="IMGXD">
-                <div class="resenia__content">
-                    <h2 class="resenia__title">Producto 1</h2>
-                    <span class="resenia__price">$ XXXXX</span>
-                    <p class="resenia__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-                        esse
-                        perspiciatis est qui minima nostrum aperiam delectus eligendi suscipit totam. Delectus libero
-                        neque
-                        repellendus fuga soluta architecto? Dolore, a id!</p>
-                </div>
-            </div>
-            <div class="similares">
-                <h3 class="similares__title">Productos similares</h3>
-                <ul class="products__category-list">
-                    <li class="product__item">
-                        <a href="#" class="product__img"><img src="Assets/IMG/header/unsplash_epRFE_hBNjo.png"
-                                alt="IMGXD"></a>
-                        <p class="product__tittle product__text">Producto XYZ</p>
-                        <p class="product__price product__text">$XXXXX</p>
-                        <a href="#" class="product__link product__text">Ver producto</a>
-                    </li>
-                    <li class="product__item">
-                        <a href="#" class="product__img"><img src="Assets/IMG/header/unsplash_epRFE_hBNjo.png"
-                                alt="IMGXD"></a>
-                        <p class="product__tittle product__text">Producto XYZ</p>
-                        <p class="product__price product__text">$XXXXX</p>
-                        <a href="#" class="product__link product__text">Ver producto</a>
-                    </li>
-                    <li class="product__item">
-                        <a href="#" class="product__img"><img src="Assets/IMG/header/unsplash_epRFE_hBNjo.png"
-                                alt="IMGXD"></a>
-                        <p class="product__tittle product__text">Producto XYZ</p>
-                        <p class="product__price product__text">$XXXXX</p>
-                        <a href="#" class="product__link product__text">Ver producto</a>
-                    </li>
-                    <li class="product__item">
-                        <a href="#" class="product__img"><img src="Assets/IMG/header/unsplash_epRFE_hBNjo.png"
-                                alt="IMGXD"></a>
-                        <p class="product__tittle product__text">Producto XYZ</p>
-                        <p class="product__price product__text">$XXXXX</p>
-                        <a href="#" class="product__link product__text">Ver producto</a>
-                    </li>
-                    <li class="product__item">
-                        <a href="#" class="product__img"><img src="Assets/IMG/header/unsplash_epRFE_hBNjo.png"
-                                alt="IMGXD"></a>
-                        <p class="product__tittle product__text">Producto XYZ</p>
-                        <p class="product__price product__text">$XXXXX</p>
-                        <a href="#" class="product__link product__text">Ver producto</a>
-                    </li>
-                    <li class="product__item">
-                        <a href="#" class="product__img"><img src="Assets/IMG/header/unsplash_epRFE_hBNjo.png"
-                                alt="IMGXD"></a>
-                        <p class="product__tittle product__text">Producto XYZ</p>
-                        <p class="product__price product__text">$XXXXX</p>
-                        <a href="#" class="product__link product__text">Ver producto</a>
-                    </li>
-                </ul>
-            </div>
+        <section class="muestra-productos" data-seccion>
+            
+            
         </section>
         <section class="contact__section">
             <ul class="about__list">
@@ -139,13 +82,15 @@
                 <li class="about__link">Quiero ser franquiciado</li>
                 <li class="about__link">Anuncie Aquí</li>
             </ul>
-            <form class="contact__form">
+            <form class="contact__form" data-form>
                 <fieldset class="contact__container">
                     <legend class="contact__title">Habla con Nosotros</legend>
-                    <label for="nombre" class="contact__label">Nombre <input type="text" name="nombre" id="nombre"
-                            class="contact__input"></label>
-                    <textarea name="message" id="contact__message" cols="30" rows="10"
-                        class="contact__message"></textarea>
+                    <div class="input__container">
+                        <label for="nombre" class="contact__label">Nombre
+                            <input type="text" name="nombre" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ]+" id="nombre" class="contact__input" required data-input>
+                        </label>
+                    </div>
+                    <textarea name="message" id="mensaje" cols="30" rows="10" class="contact__message" required data-input></textarea>
                     <button type="submit" class="contact__button button">Enviar Mensaje</button>
                 </fieldset>
             </form>
@@ -157,5 +102,5 @@
         <span class="footer__age">&copy; 2023</span>
     </footer>
 </body>
-
+    <script type="module" src="Assets/JS/client-controllers/selectedProduct.js"></script>
 </html>

@@ -1,9 +1,15 @@
-
-.product__text{
+.product__text {
     line-height: 1.8;
     font-family: var(--Raleway);
     color: var(--blanco);
 }
-.product__item{
+
+.product__img{
+    height: 100%;
+}
+
+.product__item {
     margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
 }
