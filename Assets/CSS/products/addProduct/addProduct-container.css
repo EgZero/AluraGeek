@@ -38,14 +38,6 @@
     border-radius: 5px;
 }
 
-.disabling-cover{
-    background-color: var(--negro);
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    opacity: .5;
-}
 
 .cancel-addProduct{
     font-size: 1.1rem;

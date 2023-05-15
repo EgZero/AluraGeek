@@ -49,6 +49,8 @@
     <link rel="stylesheet" href="assets/CSS/products/product__item/product__link.css">
     <link rel="stylesheet" href="assets/CSS/products/product__item/product__price.css">
     <link rel="stylesheet" href="assets/CSS/products/product__item/product__tittle.css">
+    <link rel="stylesheet" href="assets/CSS/products/product__item/deleteProduct.css">
+    <link rel="stylesheet" type="text/css" href="assets/CSS/products/addProduct/disabling_cover.css">
 
     <!-- FOOTER -->
     <link rel="stylesheet" href="assets/CSS/footer.css">
@@ -61,7 +63,7 @@
 
     <header class="header container">
         <div class="header__header">
-            <h1 class="header__logo logo"><a href="ProductoSeleccionado.html"><img src="" alt="Logo"></a></h1>
+            <h1 class="header__logo logo"><a href="index.html"><img src="" alt="Logo"></a></h1>
             <form action="#" class="search__form">
                 <input type="search" placeholder="¿Qué deseas buscar?" name="search" id="" class="header__searchbar">
                 <button type="submit" class="header__search-button"><img src="Assets/IMG/header/search.svg"></button>
@@ -70,8 +72,8 @@
     </header>
     <main class="main container">
         <section class="muestra-productos" data-seccion>
-            
-            
+
+
         </section>
         <section class="contact__section">
             <ul class="about__list">
@@ -87,10 +89,12 @@
                     <legend class="contact__title">Habla con Nosotros</legend>
                     <div class="input__container">
                         <label for="nombre" class="contact__label">Nombre
-                            <input type="text" name="nombre" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ]+" id="nombre" class="contact__input" required data-input>
+                            <input type="text" name="nombre" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ]+" id="nombre"
+                                class="contact__input" required data-input>
                         </label>
                     </div>
-                    <textarea name="message" id="mensaje" cols="30" rows="10" class="contact__message" required data-input></textarea>
+                    <textarea name="message" id="mensaje" cols="30" rows="10" class="contact__message" required
+                        data-input></textarea>
                     <button type="submit" class="contact__button button">Enviar Mensaje</button>
                 </fieldset>
             </form>
@@ -102,5 +106,6 @@
         <span class="footer__age">&copy; 2023</span>
     </footer>
 </body>
-    <script type="module" src="Assets/JS/client-controllers/selectedProduct.js"></script>
+<script type="module" src="Assets/JS/client-controllers/selectedProduct.js"></script>
+
 </html>

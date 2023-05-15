@@ -5,16 +5,16 @@ const formulario = document.querySelector("#login_form")
 const inputs  =  formulario.querySelectorAll("[data-input]")
 const usuario = inputs[0]
 const contrasenia = inputs[1]
-// if(window.localStorage.getItem("acceso") == "true"){
-//     window.location.href = "Productos.html"
-// }
+if(window.sessionStorage.getItem("acceso") == "true"){
+    window.location.href = "Productos.html"
+}
 validarForm();
 
 formulario.addEventListener("submit", async (event)=>{
     event.preventDefault();
     const validity =  await buscarPerfil(usuario.value,contrasenia.value);
     if(validity){
-        window.localStorage.setItem("acceso", "true")
+        window.sessionStorage.setItem("acceso", "true")
         window.location.href = "Productos.html"
     }else{
         mostrarErrorPerfil(inputs);

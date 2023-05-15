@@ -64,7 +64,8 @@ const crearVentana_Emergente = () =>{
 export const crearDeshabilitador = ()=>{
     
    const deshabilitador = document.createElement("div");
-   deshabilitador.classList.add("disabling-cover");
+  deshabilitador.classList.add("disabling-cover");
+
    return deshabilitador
 }
 

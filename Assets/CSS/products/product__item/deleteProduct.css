@@ -1,0 +1,43 @@
+.deleteProduct__button{
+    font-size: 1.1rem;
+    border: 2px solid var(--rojo);
+    color: var(--rojo);
+    display: block;
+    margin: 1rem auto 0;
+}
+
+.deleteProduct__section{
+    position: fixed;
+    top: 20vh;
+    right: 3%;
+    left: 3%;
+    background-color: var(--blanco);
+    border-radius: 5px;
+}
+
+.deleteProduct__text{
+    font-size: 1.2rem;
+    font-family: var(--Raleway);
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: .5rem;
+}
+
+.buttons__container{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    gap: 1.5rem;
+}
+
+.deleteProduct__button--cancelar{
+    background-color: var(--blanco);
+    border: 2px solid var(--negro);
+}
+
+
+.deleteProduct__button--eliminar{
+    background-color: var(--blanco);
+    border: 2px solid var(--rojo);
+    color: var(--rojo);
+}

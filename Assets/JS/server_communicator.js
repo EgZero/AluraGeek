@@ -31,10 +31,17 @@ const datosProducto = (id)=>{
         .then(response => response.json())
 }
 
+const eliminarProducto = (id)=>{
+    return fetch(`http://localhost:3000/productos/${id}`, {
+        method: 'DELETE'
+    })
+};
+
 export const server = {
     ListaProductos,
     perfiles,
     agregarProducto,
-    datosProducto
+    datosProducto,
+    eliminarProducto
 }
 

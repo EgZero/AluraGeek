@@ -1,4 +1,5 @@
 import { server } from "../server_communicator.js";
+import { ventanaEmergente } from "./addProduct.controller.js";
 
 const obtenerInformacion = async ()=> {
     const location = new URL(window.location);
@@ -9,7 +10,7 @@ const obtenerInformacion = async ()=> {
     const contenedor = document.createElement("div")
     contenedor.classList.add("resenia")
     const contenido = `
-                     <img class="resenia__img" src="Assets/IMG/header/ImagenSVG.svg" alt="IMGXD">
+                     <img class="resenia__img" src=${datos.img} alt="IMGXD">
                         <div class="resenia__content">
                             <h2 class="resenia__title">${datos.nombre}</h2>
                             <span class="resenia__price">${datos.precio}</span>
@@ -21,6 +22,13 @@ const obtenerInformacion = async ()=> {
                         </div>`;
     contenedor.innerHTML = contenido;
     seccion.appendChild(contenedor);
+    if(window.sessionStorage.getItem("acceso") == "true"){
+        const deletebtn = document.createElement("button");
+        deletebtn.classList.add("deleteProduct__button" , "button");
+        deletebtn.textContent = "Eliminar Producto"
+        contenedor.appendChild(deletebtn)
+        deletebtn.addEventListener("click", ()=>{crearAvisoEliminar(datos.nombre,datos.id)});
+    }
     return datos
 }
 
@@ -38,7 +46,7 @@ const crearRelacionados = async ()=>{
         if(categoria == datoCategoria.categoria){
             const item = document.createElement("li");
             item.classList.add("product__item");
-            item.innerHTML = `<a href="ProductoSeleccionado.html?id=${id}" class="product__img"><img src="${img}" alt="Image"></a>
+            item.innerHTML = `<a href="ProductoSeleccionado.html?id=${id}" class="product__img"><img class="product_img-img" src="${img}" alt="Image"></a>
                                 <p class="product__tittle product__text">${nombre}</p>
                                 <p class="product__price product__text">${precio}</p>
                                 <a href="ProductoSeleccionado.html?id=${id}" class="product__link product__text">Ver producto</a>`
@@ -49,4 +57,30 @@ const crearRelacionados = async ()=>{
     seccion.appendChild(contenedor);     
 }
 crearRelacionados();
-validarForm();
+
+const crearAvisoEliminar = (nombre,id)=>{
+    const contenedor = document.createElement("div");
+    contenedor.classList.add("deleteProduct__container");
+    contenedor.innerHTML = `<div class="container deleteProduct__section">
+                            <p class="deleteProduct__text">¿Estas seguro que desas eliminar ${nombre}?</p>
+                            <div class="buttons__container">
+                                <button class="deleteProduct__button--cancelar button" >Cancelar</button>
+                             <button class="deleteProduct__button--eliminar button" >Eliminar</button>
+                            </div>
+                        </div>`
+
+    const main = document.querySelector(".main")
+    const disablingCover = ventanaEmergente.crearDeshabilitador();
+    main.appendChild(disablingCover);
+    main.appendChild(contenedor);
+    const cancel__btn = document.querySelector(".deleteProduct__button--cancelar");
+    cancel__btn.addEventListener("click", ()=>{
+        main.removeChild(contenedor)
+        main.removeChild(disablingCover)
+    })
+    const delete__btn = document.querySelector(".deleteProduct__button--eliminar");
+    delete__btn.addEventListener("click", ()=>{
+        server.eliminarProducto(id);
+        window.location.href = "Productos.html"
+    })
+}
