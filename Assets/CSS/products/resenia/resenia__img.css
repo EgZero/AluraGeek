@@ -2,3 +2,9 @@
     width: 100%;
     max-width: 560px;
 }
+
+@media  screen and (width > 376px){
+    .resenia__img{
+        margin: 0 6%;
+    }
+}

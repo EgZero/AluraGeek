@@ -2,9 +2,5 @@
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-}
-
-@media screen and (min-width: 0px){
-    .products__category-list{
-    }
+    align-items:baseline;
 }

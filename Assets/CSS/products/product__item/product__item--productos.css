@@ -11,5 +11,6 @@
 .product__item {
     margin-top: .5rem;
     display: flex;
+    max-width: 150px;
     flex-direction: column;
 }

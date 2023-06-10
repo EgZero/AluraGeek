@@ -1,4 +1,9 @@
-
+.product__item{    
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .product__text{
     line-height: 1.8;
@@ -6,7 +11,7 @@
     color: var(--blanco);
 }
 
-@media screen and (min-width: 0px){
+@media screen and (min-width: 0px) and (max-width: 1023px){
     .product__item:nth-child(5),
     .product__item:nth-child(6){
         display: none;

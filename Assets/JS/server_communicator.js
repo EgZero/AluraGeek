@@ -1,10 +1,10 @@
 const ListaProductos = () => {
-    return fetch('http://localhost:3000/productos')
+    return fetch('https://64518956e1f6f1bb22b27887.mockapi.io/productos')
         .then(response => response.json())
 }
 
 const perfiles = () => {
-    return fetch('http://localhost:3000/perfiles')
+    return fetch('https://64518956e1f6f1bb22b27887.mockapi.io/perfiles')
         .then(respuesta => respuesta.json())
 }
 
@@ -14,7 +14,7 @@ const agregarProducto = (nombre, precio, categoria, img) => {
     const reader = new FileReader();
     reader.addEventListener("load", () => {
         const img = reader.result
-        return fetch('http://localhost:3000/productos', {
+        return fetch('https://64518956e1f6f1bb22b27887.mockapi.io/productos', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -27,12 +27,12 @@ const agregarProducto = (nombre, precio, categoria, img) => {
 }
 
 const datosProducto = (id)=>{
-    return fetch(`http://localhost:3000/productos/${id}`)
+    return fetch(`https://64518956e1f6f1bb22b27887.mockapi.io/productos/${id}`)
         .then(response => response.json())
 }
 
 const eliminarProducto = (id)=>{
-    return fetch(`http://localhost:3000/productos/${id}`, {
+    return fetch(`https://64518956e1f6f1bb22b27887.mockapi.io/productos/${id}`, {
         method: 'DELETE'
     })
 };
